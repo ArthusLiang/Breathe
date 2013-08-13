@@ -30,7 +30,7 @@ Quick Start
 ###Method###
 >**attach** ------ attach the event to a thread
 
->**detach**  ------ detach the event from it's thread
+>**detach**	------ detach the event from it's thread
 
 >**exc** ----------- run the function in the event
 
@@ -119,6 +119,35 @@ create an instance of thread in the breathe pool
 	}
 	_thread.fire(); //21,20
 	_thread.fire(); //19.18
+
+## Listener ##
+
+###Explanation####
+>Listener is the base class of CPU. You can create other object to watch threads by using listener.
+
+###Property####
+
+>**Pool** ----------------- the listen's private thread pool 
+
+>**Option** -------------- config data
+
+###Method####
+
+>**option** --------------- get or set config data
+
+>**unWatch** ------------ remove threads from the private pool
+
+>**watch** ---------------- add threads to the private pool
+
+###Interface###
+
+>**log** --------------------- log info
+
+>**start** ------------------- start to watch threads
+
+>**stop** -------------------- stop watching threads
+
+>**pause** ------------------ pause watching threads
 
 
 ## CPU ##
